@@ -117,7 +117,7 @@ class App {
       let res, data;
       async function fetchData() {
         res = await fetch(
-          `http://www.7timer.info/bin/api.pl?lon=${lon}&lat=${lat}&product=civillight&output=json`
+          `https://www.7timer.info/bin/api.pl?lon=${lon}&lat=${lat}&product=civillight&output=json`
         );
         if (!res) throw new Error('Could not get data');
         if (res && !res.ok) {
